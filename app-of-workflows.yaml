@@ -7,7 +7,7 @@ spec:
     name: in-cluster
     namespace: argocd
   source:
-    path: workflows
+    path: argo-workflows
     repoURL: 'https://github.com/alejo-maya/argocd-app-off-apps'
     targetRevision: HEAD
   project: default
