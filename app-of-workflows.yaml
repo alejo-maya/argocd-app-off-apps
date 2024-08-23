@@ -1,17 +1,17 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: app-of-workflows
-spec:
-  destination:
-    name: in-cluster
-    namespace: argocd
-  source:
-    path: workflows
-    repoURL: 'https://github.com/alejo-maya/argocd-app-off-apps'
-    targetRevision: HEAD
-  project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: app-of-workflows
+# spec:
+#   destination:
+#     name: in-cluster
+#     namespace: argocd
+#   source:
+#     path: workflows
+#     repoURL: 'https://github.com/alejo-maya/argocd-app-off-apps'
+#     targetRevision: HEAD
+#   project: default
+#   syncPolicy:
+#     automated:
+#       prune: true
+#       selfHeal: true
