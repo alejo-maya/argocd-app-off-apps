@@ -13,7 +13,7 @@ spec:
     path: workflows-templates
   destination: 
     server: https://kubernetes.default.svc
-    namespace: workflows
+    namespace: argo-workflows
 
   syncPolicy:
     syncOptions:
