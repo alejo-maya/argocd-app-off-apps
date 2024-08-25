@@ -1,23 +1,23 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: argo-events-app
-  namespace: argocd
-  finalizers:
-  - resources-finalizer.argocd.argoproj.io
-spec:
-  project: default
-  source:
-    repoURL: https://github.com/alejo-maya/argocd-app-test.git
-    targetRevision: HEAD
-    path: argo-events
-  destination: 
-    server: https://kubernetes.default.svc
-    namespace: argo-events
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: argo-events-app
+#   namespace: argocd
+#   finalizers:
+#   - resources-finalizer.argocd.argoproj.io
+# spec:
+#   project: default
+#   source:
+#     repoURL: https://github.com/alejo-maya/argocd-app-test.git
+#     targetRevision: HEAD
+#     path: argo-events
+#   destination: 
+#     server: https://kubernetes.default.svc
+#     namespace: argo-events
 
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=false
-    automated:
-      selfHeal: true
-      prune: true
+#   syncPolicy:
+#     syncOptions:
+#     - CreateNamespace=false
+#     automated:
+#       selfHeal: true
+#       prune: true
